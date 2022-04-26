@@ -16,10 +16,11 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/aws/aws-xray-daemon/pkg/bufferpool"
-	"github.com/aws/aws-xray-daemon/pkg/telemetry"
-	"github.com/aws/aws-xray-daemon/pkg/tracesegment"
-	"github.com/aws/aws-xray-daemon/pkg/util/test"
+	"github.com/shogo82148/aws-xray-yadaemon/pkg/bufferpool"
+	"github.com/shogo82148/aws-xray-yadaemon/pkg/telemetry"
+	"github.com/shogo82148/aws-xray-yadaemon/pkg/tracesegment"
+	"github.com/shogo82148/aws-xray-yadaemon/pkg/util/test"
+
 	"github.com/stretchr/testify/assert"
 )
 

@@ -13,7 +13,8 @@ import (
 	"net"
 	"os"
 
-	"github.com/aws/aws-xray-daemon/pkg/socketconn"
+	"github.com/shogo82148/aws-xray-yadaemon/pkg/socketconn"
+
 	log "github.com/cihub/seelog"
 )
 

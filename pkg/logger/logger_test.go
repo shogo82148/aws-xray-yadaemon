@@ -15,8 +15,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/aws/aws-xray-daemon/pkg/cfg"
-	"github.com/aws/aws-xray-daemon/pkg/util"
+	"github.com/shogo82148/aws-xray-yadaemon/pkg/cfg"
+	"github.com/shogo82148/aws-xray-yadaemon/pkg/util"
 
 	"github.com/cihub/seelog"
 	"github.com/stretchr/testify/assert"

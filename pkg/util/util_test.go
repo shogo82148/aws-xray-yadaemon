@@ -3,7 +3,8 @@ package util
 import (
 	"strings"
 	"testing"
-	"github.com/aws/aws-xray-daemon/pkg/util/test"
+
+	"github.com/shogo82148/aws-xray-yadaemon/pkg/util/test"
 
 	"github.com/stretchr/testify/assert"
 )

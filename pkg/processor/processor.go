@@ -10,23 +10,21 @@
 package processor
 
 import (
+	"math/rand"
+	"os"
 	"sync/atomic"
 	"time"
 
-	log "github.com/cihub/seelog"
-
-	"github.com/aws/aws-xray-daemon/pkg/bufferpool"
-	"github.com/aws/aws-xray-daemon/pkg/ringbuffer"
-	"github.com/aws/aws-xray-daemon/pkg/tracesegment"
-
-	"github.com/aws/aws-xray-daemon/pkg/cfg"
-	"github.com/aws/aws-xray-daemon/pkg/conn"
-	"github.com/aws/aws-xray-daemon/pkg/util/timer"
-	"math/rand"
-	"os"
+	"github.com/shogo82148/aws-xray-yadaemon/pkg/bufferpool"
+	"github.com/shogo82148/aws-xray-yadaemon/pkg/cfg"
+	"github.com/shogo82148/aws-xray-yadaemon/pkg/conn"
+	"github.com/shogo82148/aws-xray-yadaemon/pkg/ringbuffer"
+	"github.com/shogo82148/aws-xray-yadaemon/pkg/tracesegment"
+	"github.com/shogo82148/aws-xray-yadaemon/pkg/util/timer"
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/session"
+	log "github.com/cihub/seelog"
 )
 
 // Processor buffers segments and send to X-Ray service.
