@@ -15,7 +15,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/aws/aws-xray-daemon/pkg/cfg"
+	"github.com/shogo82148/aws-xray-yadaemon/pkg/cfg"
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/awserr"

@@ -9,10 +9,11 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/shogo82148/aws-xray-yadaemon/pkg/cfg"
+
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/credentials"
 	"github.com/aws/aws-sdk-go/aws/session"
-	"github.com/aws/aws-xray-daemon/pkg/cfg"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -128,7 +129,7 @@ func TestEndpoint2(t *testing.T) {
 // Error received when no endpoint and region value present in awsCfg instance
 func TestEndpoint3(t *testing.T) {
 	awsCfg := &aws.Config{
-	// No endpoint and region value
+		// No endpoint and region value
 	}
 	result, err := getServiceEndpoint(awsCfg)
 	assert.Equal(t, "", result, "Endpoint cannot be created")

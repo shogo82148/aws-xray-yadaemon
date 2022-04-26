@@ -14,7 +14,8 @@ import (
 	"fmt"
 	"strings"
 	"testing"
-	"github.com/aws/aws-xray-daemon/pkg/util/test"
+
+	"github.com/shogo82148/aws-xray-yadaemon/pkg/util/test"
 
 	"github.com/aws/aws-sdk-go/service/xray"
 	"github.com/stretchr/testify/assert"

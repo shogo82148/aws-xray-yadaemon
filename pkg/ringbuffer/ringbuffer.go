@@ -10,13 +10,13 @@
 package ringbuffer
 
 import (
-	log "github.com/cihub/seelog"
-
 	"os"
 
-	"github.com/aws/aws-xray-daemon/pkg/bufferpool"
-	"github.com/aws/aws-xray-daemon/pkg/telemetry"
-	"github.com/aws/aws-xray-daemon/pkg/tracesegment"
+	"github.com/shogo82148/aws-xray-yadaemon/pkg/bufferpool"
+	"github.com/shogo82148/aws-xray-yadaemon/pkg/telemetry"
+	"github.com/shogo82148/aws-xray-yadaemon/pkg/tracesegment"
+
+	log "github.com/cihub/seelog"
 )
 
 var defaultCapacity = 250

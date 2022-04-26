@@ -15,8 +15,8 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/aws/aws-xray-daemon/pkg/conn"
-	"github.com/aws/aws-xray-daemon/pkg/util/timer"
+	"github.com/shogo82148/aws-xray-yadaemon/pkg/conn"
+	"github.com/shogo82148/aws-xray-yadaemon/pkg/util/timer"
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/awserr"

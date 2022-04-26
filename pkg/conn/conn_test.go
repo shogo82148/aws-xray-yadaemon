@@ -17,16 +17,14 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/aws/aws-sdk-go/aws/endpoints"
-	"github.com/aws/aws-xray-daemon/pkg/util/test"
-
-	"github.com/stretchr/testify/mock"
-
-	"github.com/aws/aws-xray-daemon/pkg/cfg"
+	"github.com/shogo82148/aws-xray-yadaemon/pkg/cfg"
+	"github.com/shogo82148/aws-xray-yadaemon/pkg/util/test"
 
 	"github.com/aws/aws-sdk-go/aws/credentials"
+	"github.com/aws/aws-sdk-go/aws/endpoints"
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/mock"
 )
 
 var ec2Region = "us-east-1"
@@ -199,15 +197,16 @@ func TestValidECSRegion(t *testing.T) {
 }
 
 // getRegionFromECSMetadata() returns an empty string if ECS metadata related env is not set
-func TestNoECSMetadata(t *testing.T){
+func TestNoECSMetadata(t *testing.T) {
 	env := stashEnv()
 	defer popEnv(env)
 	testString := getRegionFromECSMetadata()
 
 	assert.EqualValues(t, "", testString)
 }
+
 // getRegionFromECSMetadata() throws an error and returns an empty string when ECS metadata file cannot be parsed as valid JSON
-func TestInvalidECSMetadata(t *testing.T){
+func TestInvalidECSMetadata(t *testing.T) {
 	metadataFile := "][foobar})("
 	setupTestFile(metadataFile)
 	env := stashEnv()
@@ -225,7 +224,7 @@ func TestInvalidECSMetadata(t *testing.T){
 }
 
 // getRegionFromECSMetadata() throws an error and returns an empty string when ECS metadata file cannot be opened
-func TestMissingECSMetadataFile(t *testing.T){
+func TestMissingECSMetadataFile(t *testing.T) {
 	metadataFile := "foobar"
 	setupTestFile(metadataFile)
 	env := stashEnv()

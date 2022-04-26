@@ -11,7 +11,8 @@ package logger
 
 import (
 	"io"
-	"github.com/aws/aws-xray-daemon/pkg/cfg"
+
+	"github.com/shogo82148/aws-xray-yadaemon/pkg/cfg"
 
 	log "github.com/cihub/seelog"
 )

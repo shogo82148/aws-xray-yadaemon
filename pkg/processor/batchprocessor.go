@@ -10,13 +10,14 @@
 package processor
 
 import (
-	"github.com/aws/aws-xray-daemon/pkg/conn"
-	"github.com/aws/aws-xray-daemon/pkg/telemetry"
-	"github.com/aws/aws-xray-daemon/pkg/util/timer"
 	"math"
 	"math/rand"
 	"regexp"
 	"time"
+
+	"github.com/shogo82148/aws-xray-yadaemon/pkg/conn"
+	"github.com/shogo82148/aws-xray-yadaemon/pkg/telemetry"
+	"github.com/shogo82148/aws-xray-yadaemon/pkg/util/timer"
 
 	"github.com/aws/aws-sdk-go/service/xray"
 	log "github.com/cihub/seelog"

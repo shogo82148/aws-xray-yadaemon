@@ -14,12 +14,13 @@ import (
 	"os"
 	"time"
 
+	"github.com/shogo82148/aws-xray-yadaemon/pkg/cfg"
+	"github.com/shogo82148/aws-xray-yadaemon/pkg/conn"
+
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/endpoints"
 	"github.com/aws/aws-sdk-go/aws/session"
-	"github.com/aws/aws-sdk-go/aws/signer/v4"
-	"github.com/aws/aws-xray-daemon/pkg/cfg"
-	"github.com/aws/aws-xray-daemon/pkg/conn"
+	v4 "github.com/aws/aws-sdk-go/aws/signer/v4"
 	log "github.com/cihub/seelog"
 )
 

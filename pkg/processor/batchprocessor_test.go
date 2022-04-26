@@ -17,8 +17,9 @@ import (
 	"testing"
 	"time"
 
+	"github.com/shogo82148/aws-xray-yadaemon/pkg/util/test"
+
 	"github.com/aws/aws-sdk-go/service/xray"
-	"github.com/aws/aws-xray-daemon/pkg/util/test"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 )

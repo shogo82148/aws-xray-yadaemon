@@ -16,11 +16,10 @@ import (
 	"os"
 	"reflect"
 
-	"github.com/aws/aws-xray-daemon/pkg/util"
-
-	"gopkg.in/yaml.v2"
+	"github.com/shogo82148/aws-xray-yadaemon/pkg/util"
 
 	log "github.com/cihub/seelog"
+	"gopkg.in/yaml.v2"
 )
 
 // Version number of the X-Ray daemon.
@@ -31,7 +30,7 @@ var cfgFileVersions = [...]int{1, 2} // Supported versions of cfg.yaml file.
 var configLocations = []string{
 	"/etc/amazon/xray/cfg.yaml",
 	"cfg.yaml",
-	"github.com/aws/aws-xray-daemon/pkg/cfg.yaml",
+	"github.com/shogo82148/aws-xray-yadaemon/pkg/cfg.yaml",
 }
 
 // LogFile represents log file passed through command line argument.
