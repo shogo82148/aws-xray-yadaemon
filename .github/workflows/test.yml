@@ -4,8 +4,8 @@ on:
   pull_request:
 
 jobs:
-  build:
-    name: Build on ${{ matrix.os }}
+  test:
+    name: test on ${{ matrix.os }}
     strategy:
       matrix:
         os:
