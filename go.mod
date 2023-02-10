@@ -3,7 +3,7 @@ module github.com/shogo82148/aws-xray-yadaemon
 go 1.18
 
 require (
-	github.com/aws/aws-sdk-go v1.44.132
+	github.com/aws/aws-sdk-go v1.44.198
 	github.com/cihub/seelog v0.0.0-20170130134532-f561c5e57575
 	github.com/shirou/gopsutil v3.21.11+incompatible
 	github.com/stretchr/testify v1.4.0
