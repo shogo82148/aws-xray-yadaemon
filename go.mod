@@ -8,7 +8,7 @@ require (
 	github.com/shirou/gopsutil v3.21.11+incompatible
 	github.com/stretchr/testify v1.4.0
 	golang.org/x/net v0.1.0
-	golang.org/x/sys v0.3.0
+	golang.org/x/sys v0.6.0
 	gopkg.in/yaml.v2 v2.4.0
 )
 
